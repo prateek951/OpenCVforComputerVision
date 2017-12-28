@@ -13,17 +13,17 @@ img = cv2.imread('cornerdetection.jpg')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 gray = np.float32(gray)
 # Apply img the method aagainst the grayscale image
-# 100 implies that we want 100 of them to be finded
+# 200 implies that we want 100 of them to be finded
 # 0.01 represents the quality
 #10 represents the minimum distance between the corners
-corners = cv2.goodFeaturesToTrack(gray,100,0.01,10)
+corners = cv2.goodFeaturesToTrack(gray,200,0.1,10)
 corners = np.int0(corners)
 
 # Loop over all the corners and mark them
 for corner in corners:
-    x,y = corner.ravel()
+    x, y = corner.ravel()
+    # Mark each of the corners
     cv2.circle(img,(x,y),3,255,-1)
-
 # Now we have got all the corners display the final image
 cv2.imshow('Corner',img)
 cv2.waitKey(0)
