@@ -10,10 +10,11 @@ y2 = [10,14,12]
 
 plt.plot(x,y,label='First Line')
 plt.plot(x2,y2,label='Second Line')
+
 # Legends,titles and plots in matplotlib
 # which is quite similiar to matlab
-plt.xlabel('Plot number')
-plt.ylabel('Important variable')
+plt.xlabel('x')
+plt.ylabel('y')
 plt.title('Interesting Graph \n Check it out')
 
 # Invoke the legend
