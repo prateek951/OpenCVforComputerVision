@@ -1,7 +1,7 @@
 import cv2 
 import numpy as np 
 
-# Capture yourself 
+# Capture yourself or to any sample video
 cap = cv2.VideoCapture(0)
 # init bg subtractor
 foreground_background = cv2.BackgroundSubtractorMOG2()
