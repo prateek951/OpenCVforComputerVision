@@ -1,6 +1,15 @@
 # This algorithm is used to detect the object in the a video using the haar cascade 
 # object detection algorithm
 
+# Flow of cascade classifiers 
+
+# Load the classifier
+# Pass the image to the classifier
+# Get location /ROI for the detected objects
+# Draw rectangle over the detected objects
+
+
+
 import cv2
 import numpy as np 
 
