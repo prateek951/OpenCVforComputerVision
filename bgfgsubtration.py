@@ -1,5 +1,5 @@
-# Gaussina Mixed based Background/Foreground Segmentation Algorithm
-
+# Gaussian Mixed based Background/Foreground Segmentation Algorithm
+# You can use this on the background input as well
 import numpy as np
 import cv2
 
