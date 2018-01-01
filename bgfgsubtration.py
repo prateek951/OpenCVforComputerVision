@@ -3,7 +3,7 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture('MiniProjectsInCV/walking.avi')
+cap = cv2.VideoCapture('MiniProjectsinCV/walking.avi')
 
 # Initlaize background subtractor
 foreground_background = cv2.BackgroundSubtractorMOG()
