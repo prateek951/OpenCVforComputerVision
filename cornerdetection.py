@@ -13,8 +13,8 @@ img = cv2.imread('cornerdetection.jpg')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 gray = np.float32(gray)
 # Apply img the method aagainst the grayscale image
-# 200 implies that we want 100 of them to be finded
-# 0.01 represents the quality
+# 200 implies that we want 200 of them to be finded
+# 0.1 represents the quality
 #10 represents the minimum distance between the corners
 corners = cv2.goodFeaturesToTrack(gray,200,0.1,10)
 corners = np.int0(corners)
